@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".chat.ChatBotFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/youCanChatTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:text="@string/you_can_chat"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/secondYouCanChatTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youCanChatTextID"
+            android:fontFamily="@font/antic"
+            android:text="@string/second_you_can_chat"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/linearChatId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondYouCanChatTextID"
+            android:layout_marginTop="20dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/start_button_normal"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/download"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/main_screen_button_normal"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/chat"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/start_button_clicked"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/book"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/linearChatId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/chat_blob_two" />
+
+        <Button
+            android:id="@+id/chatWithChatBotId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_screen_button_pressed"
+            android:fontFamily="@font/anton"
+            android:text="@string/chat"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

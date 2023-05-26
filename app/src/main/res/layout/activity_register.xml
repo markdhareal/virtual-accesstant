@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".activities.RegisterActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_wave"
+        >
+
+        <TextView
+            android:id="@+id/registerTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:paddingStart="10dp"
+            android:text="@string/register"
+            android:textColor="@color/secondColorDark"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:id="@+id/blobPersonTwo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/registerTextId"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/blob_person_two" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blobPersonTwo"
+            android:orientation="vertical">
+
+
+
+            <EditText
+                android:id="@+id/nameRegisterId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edit_text_register"
+                android:drawableStart="@drawable/custom_person_icon"
+                android:drawablePadding="12dp"
+                android:hint="@string/nameString"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <EditText
+                android:id="@+id/emailRegisterId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edit_text_register"
+                android:drawableStart="@drawable/custom_email_icon_reg"
+                android:drawablePadding="12dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <EditText
+                android:id="@+id/passwordRegisterId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_edit_text_register"
+                android:drawableStart="@drawable/custom_lock_icon_reg"
+                android:drawablePadding="12dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+
+            <Button
+                android:id="@+id/regButtonId"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/register_button_pressed"
+                android:text="@string/register"
+                android:fontFamily="@font/anton"
+                android:textColor="@color/secondColorDark"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarRegId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

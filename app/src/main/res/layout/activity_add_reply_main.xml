@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+    tools:context=".admin.AddReplyMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/ic_wave">
+
+        <TextView
+            android:id="@+id/textViewActivityAddReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/anton"
+            android:text="@string/add_reply"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="45dp" />
+
+        <ImageView
+            android:id="@+id/imageActivityAddReply"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/textViewActivityAddReply"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/blob_person_two" />
+
+        <TextView
+            android:id="@+id/textReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageActivityAddReply"
+            android:fontFamily="@font/anton"
+            android:text="@string/keyword"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/replyId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textReply"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edit_text_register"
+            android:hint="@string/type_something"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textReplyDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/replyId"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/anton"
+            android:text="@string/reply"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/replyDescriptionId"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textReplyDescription"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edit_text_register"
+            android:hint="@string/type_something"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+
+        <Button
+            android:id="@+id/addButtonReply"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/register_button_pressed"
+            android:fontFamily="@font/anton"
+            android:text="@string/add"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

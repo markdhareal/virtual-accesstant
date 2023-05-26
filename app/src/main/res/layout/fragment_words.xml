@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".book.WordsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/bookTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:text="@string/book_of_ram"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/secondBookTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookTextViewId"
+            android:fontFamily="@font/antic"
+            android:text="@string/second_book_of_ram"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/linearWordsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondBookTextViewId"
+            android:layout_marginTop="20dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/start_button_normal"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/download"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/main_screen_button_normal"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/chat"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/start_button_clicked"
+                android:padding="15dp"
+                android:layout_margin="3dp"
+                android:text="@string/book"
+                android:textColor="@color/secondColorDarker"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/linearWordsId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/words_blob" />
+
+        <Button
+            android:id="@+id/takeALookBtnId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/start_button_pressed_register"
+            android:fontFamily="@font/anton"
+            android:text="@string/take_a_look"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

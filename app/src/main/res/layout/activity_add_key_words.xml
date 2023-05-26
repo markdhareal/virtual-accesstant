@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/second_color"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    >
+
+    <TextView
+        android:id="@+id/exitAddKeyWordsId"
+        android:text="@string/exit_dialog"
+        android:textColor="@color/secondColorDarker"
+        android:textSize="25dp"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/exitAddKeyWordsId">
+
+        <TextView
+            android:id="@+id/textAddKeyWordsId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="@string/add_keywords"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageAddKeyWordsId"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textAddKeyWordsId"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/admin" />
+
+        <EditText
+            android:id="@+id/editTextAddKeyWordsId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageAddKeyWordsId"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_edit_text_login"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="5dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <Button
+            android:id="@+id/logInButtonAddKeyWordsId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_button_pressed"
+            android:fontFamily="@font/anton"
+            android:text="@string/login"
+            android:textColor="@color/main_color" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

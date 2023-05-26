@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "452098331755",
+    "project_id": "chatbotsd-1b796",
+    "storage_bucket": "chatbotsd-1b796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452098331755:android:9babbea0c6014c87be4d2e",
+        "android_client_info": {
+          "package_name": "com.app.sdchatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452098331755-lul5hh00kt9jr7lnl3626h44iuitm1ss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.sdchatbot",
+            "certificate_hash": "0b4eedcc4b8e8f17537aebdd1d8242d02f1335fb"
+          }
+        },
+        {
+          "client_id": "452098331755-1pokvu13drb2hhmfrka1katjo2147jac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhzmw7Y7N_J_0Zn45Cfz0JRwtg86mqKKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452098331755-1pokvu13drb2hhmfrka1katjo2147jac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

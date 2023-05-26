@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".book.BookActivity">
+
+    <LinearLayout
+        android:id="@+id/linearBookOfKnowledge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:src="@drawable/book_knowledge"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            />
+        <TextView
+            android:id="@+id/bookOfKnowledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:text="@string/book_of_knowledge"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="30dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBookOfKnowledge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearBookOfKnowledge" />
+
+</RelativeLayout>

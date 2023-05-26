@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/main_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AddKeyWordsMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/ic_wave">
+
+        <TextView
+            android:id="@+id/textViewActivityAddKeyWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_keywords"
+            android:textSize="45dp"
+            android:textColor="@color/secondColorDarker"
+            android:fontFamily="@font/anton"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/imageActivityAddKeyWords"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/blob_person_one"
+            android:layout_below="@+id/textViewActivityAddKeyWords"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/textKeyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageActivityAddKeyWords"
+            android:fontFamily="@font/anton"
+            android:text="@string/keyword"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/keyWordId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textKeyWord"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edit_text_login"
+            android:hint="@string/type_something"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/textKeyWordDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="20dp"
+            android:textColor="@color/secondColorDarker"
+            android:fontFamily="@font/anton"
+            android:layout_below="@+id/keyWordId"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/keyWordDescriptionId"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textKeyWordDescription"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edit_text_login"
+            android:hint="@string/type_something"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+
+        <Button
+            android:id="@+id/addButtonKeyWord"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/login_button_pressed"
+            android:fontFamily="@font/anton"
+            android:text="@string/add"
+            android:textColor="@color/main_color"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

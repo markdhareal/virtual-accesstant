@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_wave">
+
+        <TextView
+            android:id="@+id/greetingsOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:paddingStart="6dp"
+            android:text="@string/greetingsOneText"
+            android:textColor="@color/secondColorDark"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/greetingsTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/greetingsOne"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/anton"
+            android:text="@string/greetingsTwoText"
+            android:textColor="@color/secondColorDark"
+            android:textSize="40dp" />
+
+
+        <ImageView
+            android:id="@+id/chatBotStartId"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/greetingsTwo"
+            android:layout_centerInParent="true"
+            android:src="@drawable/chatbot_start" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/chatBotStartId"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/logInButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/login"
+                android:textColor="@color/secondColorDark"
+                android:textSize="20dp"
+                android:fontFamily="@font/anton"
+                android:background="@drawable/start_button_pressed_login"
+                android:layout_marginBottom="30dp" />
+
+            <Button
+                android:id="@+id/registerButtonID"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/register"
+                android:textColor="@color/secondColorDark"
+                android:textSize="20dp"
+                android:fontFamily="@font/anton"
+                android:background="@drawable/start_button_pressed_register"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

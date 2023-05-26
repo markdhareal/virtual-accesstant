@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/second_color"
+    android:layout_width="300dp"
+    android:layout_height="400dp">
+
+    <TextView
+        android:id="@+id/exitAddReplyId"
+        android:text="@string/exit_dialog"
+        android:textColor="@color/secondColorDarker"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/exitAddReplyId"
+        android:layout_width="300dp"
+        android:layout_height="400dp">
+
+        <TextView
+            android:id="@+id/textAddReplyId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="@string/add_reply"
+            android:textColor="@color/secondColorDarker"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/imageAddReplyId"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textAddReplyId"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/admin" />
+
+        <EditText
+            android:id="@+id/editTextAddReplyId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/imageAddReplyId"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_edit_text_register"
+            android:drawableStart="@drawable/custom_lock_icon_reg"
+            android:drawablePadding="5dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <Button
+            android:id="@+id/logInButtonAddReplyId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/register_button_pressed"
+            android:fontFamily="@font/anton"
+            android:text="@string/login"
+            android:textColor="@color/secondColorDarker" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
